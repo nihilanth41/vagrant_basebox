@@ -46,3 +46,11 @@ aptitude -y install wget curl
 # More helpful packages
 aptitude -y install htop tree zsh 
 
+# Lamp server 
+tasksel install lamp-server 
+usermod -a -G www-data vagrant
+
+# Add web group, and put some users in it
+groupadd web
+usermod -a -G web www-data
+usermod -a -G web vagrant
