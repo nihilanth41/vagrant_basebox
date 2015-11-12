@@ -46,11 +46,7 @@ aptitude -y install wget curl
 # More helpful packages
 aptitude -y install htop tree zsh 
 
-# Lamp server 
-tasksel install lamp-server 
-usermod -a -G www-data vagrant
+# Apache/PHP
+aptitude -y install apache2 php5 libapache2-mod-php5
+service apache2 restart 
 
-# Add web group, and put some users in it
-groupadd web
-usermod -a -G web www-data
-usermod -a -G web vagrant
