@@ -17,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   # Port forwarding example:
-  #config.vm.network :forwarded_port, guest: 8080, host: 8080 # Tomcat
+  config.vm.network :forwarded_port, guest: 80, host: 80 # Apache 
 
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", '3000']

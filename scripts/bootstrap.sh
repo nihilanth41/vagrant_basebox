@@ -44,7 +44,7 @@ echo "JAVA_HOME=$JAVA_HOME" >> /etc/environment
 aptitude -y install wget curl
 
 # More helpful packages
-aptitude -y install htop tree zsh 
+aptitude -y install htop tree dos2unix 
 
 # Apache/PHP
 aptitude -y install apache2 php5 libapache2-mod-php5
