@@ -22,8 +22,11 @@ aptitude -y install openssh-server
 # Build tools
 aptitude -y install build-essential #automake libtool
 
-# Git vim
-aptitude -y install git vim
+# Git, vim
+aptitude -y install git vim 
+
+# Vim-related
+silversurfer-ag
 
 # Java (Oracle)
 aptitude install -y software-properties-common
@@ -41,7 +44,7 @@ JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 echo "JAVA_HOME=$JAVA_HOME" >> /etc/environment
 
 # Wget and curl
-aptitude -y install wget curl
+aptitude -y install wget curl 
 
 # More helpful packages
 aptitude -y install htop tree dos2unix unzip pv parallel
