@@ -28,6 +28,11 @@ aptitude -y install git vim
 # Vim-related
 silversurfer-ag
 
+# For dotfiles management
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt-get update
+sudo apt-get install rcm
+
 # Java (Oracle)
 aptitude install -y software-properties-common
 aptitude install -y python-software-properties
