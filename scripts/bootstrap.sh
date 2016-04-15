@@ -26,7 +26,11 @@ aptitude -y install build-essential #automake libtool
 aptitude -y install git vim 
 
 # Vim-related
-silversurfer-ag
+aptitude -y install silversurfer-ag
+
+# Other
+aptitude -y install nmap
+
 
 # For dotfiles management
 sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
